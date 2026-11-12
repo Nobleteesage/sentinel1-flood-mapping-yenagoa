@@ -1,0 +1,18 @@
+Cells of about 375 m used (test blocks only, at least 80% evaluable): 1,487
+UNOSAT flood cells (at least half the cell flooded): 456 (30.7%)
+Correlation between UNOSAT flood fraction and mean Random Forest probability: 0.621
+Correlation between UNOSAT flood fraction and mean minus dVH:               0.554
+Mean RF probability in UNOSAT flood cells: 0.649, in dry cells: 0.330
+
+Cell level ranking quality
+score                       avg precision  ROC AUC
+Random Forest, cell mean    0.768          0.858
+minus dVH, cell mean        0.720          0.816
+
+Random Forest at cell level, flagging a cell when its mean probability reaches the value
+cutoff   precision  recall   F1
+0.3      0.465      0.925    0.619
+0.4      0.539      0.825    0.652
+0.5      0.631      0.719    0.672
+0.6      0.728      0.623    0.671
+0.7      0.820      0.489    0.613

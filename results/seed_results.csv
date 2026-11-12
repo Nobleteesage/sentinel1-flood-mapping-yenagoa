@@ -1,0 +1,6 @@
+# RF average precision,RF ROC AUC,RF F1 (cutoff 0.5),Single pixel dVH rule, AP,Smoothed 15 px dVH rule, AP,Smoothed 15 px dVV rule, AP,Smoothed 15 px dVH rule, F1 (tuned),Flood share in test blocks (chance AP)
+0.6952,0.8216,0.6217,0.5155,0.6880,0.6704,0.6153,0.2871
+0.6017,0.7972,0.5671,0.4316,0.5883,0.5825,0.5580,0.2373
+0.6777,0.8271,0.6358,0.4989,0.6677,0.6711,0.6268,0.2791
+0.6892,0.8134,0.6336,0.5141,0.6772,0.6783,0.6170,0.2956
+0.6705,0.8184,0.6297,0.4920,0.6502,0.6446,0.6268,0.2858

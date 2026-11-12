@@ -1,0 +1,21 @@
+Training on Oct 25 radar and labels, 250,000 pixels from the training blocks ...
+  trained in 79 s
+Oct 13 and Oct 25 rasters share the same grid: True
+  Oct 13 to 17 label 0 dry land                       688,697   60.4%
+  Oct 13 to 17 label 1 UNOSAT flood                   221,617   19.4%
+  Oct 13 to 17 label 2 permanent water (ignored)       28,267    2.5%
+  Oct 13 to 17 label 3 cloud (ignored)                201,838   17.7%
+
+Transfer test pixels (Oct 13, spatially held out blocks): 357,043, flood share 23.4%
+
+Pixel level, Random Forest trained on Oct 25, tested on Oct 13
+  precision 0.512  recall 0.748  F1 0.608  IoU 0.437
+score                       avg precision  ROC AUC
+Random Forest probability   0.667          0.839
+minus dVH (simple rule)     0.467          0.697
+
+Cell level (about 375 m): 1,310 cells, 321 UNOSAT flood cells (24.5%)
+  correlation with UNOSAT flood fraction: Random Forest 0.623, minus dVH 0.580
+score                       avg precision  ROC AUC
+Random Forest, cell mean    0.742          0.878
+minus dVH, cell mean        0.694          0.843

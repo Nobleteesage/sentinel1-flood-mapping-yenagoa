@@ -1,0 +1,6 @@
+data/
+preview/
+__pycache__/
+*.tif
+*.npz
+*.npy

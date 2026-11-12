@@ -1,0 +1,20 @@
+Raster 1868 x 1953, bands 4, CRS EPSG:4326
+Valid pixels: 1,140,542 (31.3% of the bounding box)
+  label 0 dry land                       761,157   66.7% of valid pixels
+  label 1 UNOSAT flood                   301,978   26.5% of valid pixels
+  label 2 permanent water (ignored)       63,450    5.6% of valid pixels
+  label 3 cloud (ignored)                 13,957    1.2% of valid pixels
+Train pixels 655,358, test pixels 407,777 (blocks of 80 x 80 pixels, seed 42)
+Flood share: train 28.2%, test 28.7%
+
+Scores on held out test blocks, against UNOSAT (permanent water and cloud pixels excluded)
+rule                                      precision  recall   F1      IoU
+VV < -18 dB (fixed)                       0.650      0.062    0.113   0.060
+VV change < -3 dB (fixed)                 0.607      0.303    0.404   0.253
+VV < -10 dB (tuned on train)              0.593      0.382    0.465   0.303
+VV change < -1 dB (tuned)                 0.400      0.607    0.482   0.318
+VH change < -1 dB (tuned)                 0.427      0.585    0.494   0.328
+VV < -10 and VV change < -1               0.610      0.358    0.451   0.291
+
+Saved data/dataset_2022-10-25.npz
+Saved preview/baseline_agreement.png using rule: VH change < -1 dB (tuned)

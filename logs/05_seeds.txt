@@ -1,0 +1,20 @@
+1,063,135 evaluable pixels inside Yenagoa, flood share 28.4%
+
+seed  RF AP    RF AUC   RF F1    dVH AP   dVH15 AP  dVV15 AP  dVH15 rule F1
+42    0.695    0.822    0.622    0.516    0.688     0.670     0.615
+1     0.602    0.797    0.567    0.432    0.588     0.583     0.558
+2     0.678    0.827    0.636    0.499    0.668     0.671     0.627
+3     0.689    0.813    0.634    0.514    0.677     0.678     0.617
+4     0.670    0.818    0.630    0.492    0.650     0.645     0.627
+
+Mean and spread over 5 different random block splits
+  RF average precision                      0.667  +/- 0.038
+  RF ROC AUC                                0.816  +/- 0.011
+  RF F1 (cutoff 0.5)                        0.618  +/- 0.029
+  Single pixel dVH rule, AP                 0.490  +/- 0.034
+  Smoothed 15 px dVH rule, AP               0.654  +/- 0.039
+  Smoothed 15 px dVV rule, AP               0.649  +/- 0.039
+  Smoothed 15 px dVH rule, F1 (tuned)       0.609  +/- 0.029
+  Flood share in test blocks (chance AP)    0.277  +/- 0.023
+
+Saved results/seed_results.csv

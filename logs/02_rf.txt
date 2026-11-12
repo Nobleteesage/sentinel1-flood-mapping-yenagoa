@@ -1,0 +1,35 @@
+13 features, 1953 x 1868 pixels
+Test pixels 407,777, flood share 28.7% (a random guess would score about this precision)
+Training Random Forest on 250,000 pixels from the training blocks ...
+  trained in 89 s
+
+Scores on held out test blocks against UNOSAT
+method                                      precision  recall   F1      IoU
+Threshold: VV_flood < -8 dB (tuned)         0.427      0.648    0.515   0.347
+Threshold: dVV < -1 dB (tuned)              0.400      0.607    0.482   0.318
+Threshold: dVH < -1 dB (tuned)              0.427      0.585    0.494   0.328
+Random Forest (probability >= 0.5)          0.559      0.699    0.621   0.451
+
+Threshold free comparison on the same test pixels (higher is better)
+score                       avg precision  ROC AUC
+Random Forest probability   0.694          0.821
+minus dVH                   0.516          0.680
+minus dVV                   0.495          0.665
+minus VV_flood              0.503          0.700
+
+Feature importance
+  dVV_mean15        0.300
+  dVH_mean15        0.257
+  dVV_mean5         0.098
+  VV_flood_mean5    0.088
+  dVH_mean5         0.081
+  VV_flood          0.035
+  VH_flood          0.034
+  VV_flood_std5     0.031
+  dVH               0.018
+  VV_before         0.016
+  VH_before         0.015
+  dVV               0.014
+  VV_minus_VH       0.012
+
+Saved preview/rf_agreement.png and data/rf_prob_2022-10-25.npy
